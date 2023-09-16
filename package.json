@@ -1,0 +1,30 @@
+{
+  "name": "nancat",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "./node_modules/blessed/usr/**/*",
+      "./cat.gif"
+    ],
+    "outputPath": "build"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js",
+    "build": "pkg . -t node18"
+  },
+  "author": "Francisco Casanova Ferro",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "blessed": "^0.1.81"
+  },
+  "devDependencies": {
+    "@types/blessed": "^0.1.23",
+    "nodemon": "^3.0.1",
+    "pkg": "^5.8.1"
+  }
+}
